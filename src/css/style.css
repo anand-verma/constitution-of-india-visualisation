@@ -1,0 +1,635 @@
+body {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.list_of_amendments::-webkit-scrollbar {
+	width: 5px;
+}
+
+.list_of_amendments::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.list_of_amendments::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	border-radius: 5px;
+}
+
+#selected_ammendments::-webkit-scrollbar {
+	width: 5px;
+}
+
+#selected_ammendments::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+#selected_ammendments::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	border-radius: 5px;
+}
+
+.reset_class {
+	color: white;
+	padding: 5px 11px;
+	border-radius: 4px;
+	background-color: rgb(125, 65, 184);
+	margin: 0px 0px 3px 56px;
+}
+
+.reset_class:hover {
+	background-color: #eee;
+	color: rgb(125, 65, 184);
+	border: 1px solid lightgrey
+}
+
+.article_coloring_legends {
+	float: right;
+	padding-left: 260px;
+	visibility: hidden;
+}
+
+.article_coloring_legends .box {
+	min-height: 12px;
+	min-width: 12px;
+}
+
+.article_coloring_legends div {
+	display: inline-block;
+}
+
+.article_coloring_legends div span {
+	display: inline-block;
+	margin-left: 1px;
+	margin-right: 3px;
+}
+
+.subheading_sub_text {
+	font-size: 11px;
+	color: #ccc;
+}
+
+.hint {
+	cursor: pointer;
+	font-size: 12px
+}
+
+#reset {
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: -8px;
+	margin-bottom: 5px;
+	visibility: hidden;
+}
+
+.col-without-padding {
+	padding: 3px;
+}
+
+.articles_container {
+	width: 300px;
+	margin: 0px 5px;
+	display: inline-block;
+}
+
+.articles_labels {
+	width: 103px;
+	display: inline-block;
+}
+
+#select_mode {
+	font-size: 12px;
+}
+
+.box {
+	border: 1px solid white;
+	float: left;
+	min-width: 20px;
+	text-align: center;
+	padding: 0px 3px;
+	font-size: 11px;
+	border-radius: 4px;
+	color: transparent;
+}
+
+.shade1 {
+	background-color: #E7E1ED;
+}
+
+.shade2 {
+	background-color: #E7E1ED;
+}
+
+/*.years_box:hover{background-color: #8D6E63; color:white;cursor: pointer;}*/
+.part_highlight {
+	background-color: #bbb;
+	color: white;
+	cursor: default;
+}
+
+.individual_box {
+	background-color: #1f57a5 !important;
+	opacity: 1 !important;
+	color: white;
+	cursor: pointer;
+}
+
+.part_names {
+	font-size: 10px;
+	color: #777;
+}
+
+.part_names:hover {
+	color: grey;
+}
+
+.part_name_bold {
+	font-weight: bold;
+}
+
+.part_names_left {
+	text-align: right;
+}
+
+.show_element {
+	visibility: visible !important;
+}
+
+
+.select_yellow_effect {
+	background-color: #DFCD2F;
+	color: white;
+}
+
+.select_green_effect {
+	background-color: #3FD0AF;
+	color: white;
+}
+
+.select_red_effect {
+	background-color: #F95353;
+	color: white;
+}
+
+.amendments {
+	text-align: right;
+}
+
+.list_class {
+	font-size: 11px;
+	padding: 5px 5px;
+	color: #777;
+}
+
+.list_group_class {
+	box-shadow: 3px 3px 3px lightgrey;
+}
+
+#selected_ammendments {
+	max-height: 300px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.list_of_amendments {
+	min-height: 300px;
+	max-height: 730px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.badge {
+	background-color: transparent;
+	color: #bbb;
+}
+
+/*.left.col-without-padding{margin-left:30px;}*/
+.list-group-item {
+	border: none;
+}
+
+.list-group-item .badge {
+	float: left;
+}
+
+.years_box {
+	border: 1px solid #ddd;
+	float: left;
+	text-align:
+		center;
+	padding: 1px 3px;
+	font-size: 11px;
+	border-radius: 4px;
+	color: #bbb;
+	margin-right: 5px;
+	background: transparent;
+}
+
+.years {
+	margin-right: 5px;
+	padding-top: 5px;
+	color: black;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.years i {
+	color: #999;
+	font-size: 10px;
+	font-weight: 100;
+}
+
+.tenures {
+	margin-top: 5px;
+}
+
+.active {
+	background-color: #808397;
+	color: white;
+}
+
+.onhovereffect {
+	background-color: grey !important;
+	cursor: default !;
+}
+
+#schedules {
+	margin-top: 650px;
+	margin-left: 0px;
+}
+
+#schedules .box {
+	min-width: 24px;
+}
+
+#schedules_label {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+#top_panel {
+	height: 60px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee
+}
+
+
+#social_sharing {
+	text-align: right;
+}
+
+.list-hover,
+.list-select {
+	color: #1f57a5;
+	font-size: 12px;
+}
+
+.heading {
+	color: gray;
+	font-weight: 200;
+	font-size: 1em;
+}
+
+.remove_heatmap_opacity {
+	opacity: 1;
+}
+
+/*.remove_party_wise_color{background-color:#EFEBE9;}*/
+.extra_space {
+	height: 30px;
+}
+
+.add_heatmap_color {
+	background-color: #b30000;
+	color: rgba(255, 255, 255, 1);
+}
+
+.hover_effect {
+	background-color: grey;
+	color: white;
+}
+
+.select_effect {
+	background-color: #1f57a5;
+	color: white;
+	cursor: pointer;
+}
+
+.select_effect_hover {
+	background-color: #1f57a5;
+	color: white;
+	cursor: pointer;
+}
+
+.viz_heading {
+	text-align: center;
+	font-size: 24px;
+	color: #1f57a5;
+	padding: 5px 0;
+	background: rgb(251, 250, 249);
+	box-shadow: 2px 2px 2px lightgrey;
+}
+
+/*.party_inc .box{background:#e57373;}
+.party_janta_party .box{background:#BA68C8;}
+.party_national_front .box{background:#7986CB;}
+.party_united_front .box{background:#7986CB;}
+.party_nda .box{background:#4DB6AC;}
+.party_upa .box{background:#AED581;}*/
+
+/*-------------------articals margins-----------*/
+#directive_principles_of_state_policy {
+	margin-top: 21px;
+	line-height: 12px;
+}
+
+#fundamental_duties {
+	margin-top: 18px;
+}
+
+#union {
+	margin-top: 45px;
+	/* margin-bottom:140px;*/
+}
+
+#states {
+	margin-top: 162px;
+	/* margin-bottom:40px;*/
+}
+
+#union_territories {
+	margin-top: 55px;
+}
+
+#the_panchayats {
+	margin-top: 9px;
+}
+
+#municipalities {
+	margin-top: 31px;
+}
+
+#the_scheduled_and_tribal_areas {
+	margin-top: 21px;
+	line-height: 1.2em;
+}
+
+#finance_property_contracts_and_suits {
+	margin-top: 33px;
+	line-height: 1.2em;
+}
+
+#relations_between_the_union_and_the_states {
+	margin-top: 6px;
+	line-height: 1.2em;
+}
+
+#states_in_part_b_of_the_first_schedule {
+	margin-top: 156px;
+	line-height: 1.2em;
+}
+
+#trade_commerce_and_intercourse_within_the_territory_of_india {
+	margin-top: 28px;
+	line-height: 1.2em;
+}
+
+#union_and_its_territory {
+	margin-top: 3px;
+	margin-left: -21px;
+	line-height: 1.2em;
+}
+
+#fundamental_rights {
+	margin-top: 4px;
+}
+
+#services_under_the_union_and_the_states {
+	margin-top: 18px;
+	line-height: 1.2em;
+}
+
+#tribunals {
+	margin-top: 5px;
+}
+
+#elections {
+	margin-top: 3px;
+}
+
+#special_provisions_relating_to_certain_classes {
+	margin-top: 2px;
+	line-height: 1.2em;
+}
+
+#official_language {
+	margin-top: 5px;
+}
+
+#emergency_provisions {
+	margin-top: 3px;
+}
+
+/*#miscellaneous{margin-left:-18px;}*/
+#temporary_transitional_and_special_provisions {
+	margin-top: 6px;
+	line-height: 1.2em;
+}
+
+#amendment_of_the_constitution {
+	margin-top: 3px;
+	line-height: 1.2em;
+}
+
+#short_title_commencement_authoritative_text {
+	margin-top: 9px;
+	line-height: 1.2em;
+}
+
+#schedule_label {
+	margin-top: 40px;
+}
+
+#citizenship {
+	margin-top: 2px;
+}
+
+.deselect-text {
+	color: #C8C8C8;
+}
+
+/*------------------amendment list ---------------*/
+.summary {
+	display: none;
+	color: grey;
+	font-size: 10px;
+	padding-top: 5px;
+	margin: 2px 3px;
+	border-top: 1px solid #eee;
+}
+
+.list_class {
+	cursor: pointer;
+}
+
+a {
+	font-size: 9px;
+	font-style: italic;
+}
+
+.tenure {
+	cursor: pointer;
+}
+
+#dbutton {
+	cursor: pointer;
+}
+
+
+/*---------------- article bricks placemnet to be crooked --------------- */
+/*#article_31d{margin-left:10px;}
+#article_43a{margin-left:6px;}
+#article_77{margin-left:3px;}
+#article_96{margin-left:8px;}
+#article_111{margin-left:6px;}
+#article_134{margin-left:9px;}
+#article_158{margin-left:5px;}
+#article_186{margin-left:7px;}
+#article_213{margin-left:3px;}
+#article_238{margin-left:10px;}
+#article_243b{margin-left:5px;}
+#article_243v{margin-left:5px;}
+#article_243ze{margin-left:2px;}
+#article_264{margin-left:4px;}
+#article_291{margin-left:7px;}
+#article_304{margin-left:5px;}
+#article_354{margin-left:6px;}
+#article_364{margin-left:11px;}
+#article_377{margin-left:50px;}
+*/
+#article_14 {
+	margin-left: 6px;
+}
+
+#article_26 {
+	margin-left: 9px;
+}
+
+#article_52 {
+	margin-left: 2px;
+}
+
+#article_80 {
+	margin-left: 2px;
+}
+
+#article_94 {
+	margin-left: 5px;
+}
+
+#article_117 {
+	margin-left: 2px;
+}
+
+#article_124c {
+	margin-left: 2px;
+}
+
+#article_141 {
+	margin-left: 8px;
+}
+
+#article_161 {
+	margin-left: 4px;
+}
+
+#article_183 {
+	margin-left: 3px;
+}
+
+#article_214 {
+	margin-left: 4px;
+}
+
+#article_233 {
+	margin-left: 12px;
+}
+
+#article_239aa {
+	margin-left: 8px;
+}
+
+#article_243b {
+	margin-left: 11px;
+}
+
+#article_243p {
+	margin-left: 10px;
+}
+
+#article_243w {
+	margin-left: 4px;
+}
+
+#article_243zd {
+	margin-left: -2px;
+}
+
+#article_247 {
+	margin-left: 2px;
+}
+
+#article_257a {
+	margin-left: 4px;
+}
+
+#article_266 {
+	margin-left: 9px;
+}
+
+#article_287 {
+	margin-left: 5px;
+}
+
+#article_296 {
+	margin-left: 14px;
+}
+
+#article_305 {
+	margin-left: 5px;
+}
+
+#article_314 {
+	margin-left: 11px;
+}
+
+#article_323a {
+	margin-left: 8px;
+}
+
+#article_330 {
+	margin-left: 6px;
+}
+
+#article_350a {
+	margin-left: 2px;
+}
+
+#article_359 {
+	margin-left: 10px;
+}
+
+#article_365 {
+	margin-left: 14px;
+}
+
+#article_371c {
+	margin-left: 14px;
+}
+
+#article_378a {
+	margin-left: 47px;
+}

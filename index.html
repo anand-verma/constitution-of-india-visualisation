@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Constitution Of India Visulaisation</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
+	<link type="text/css" href="lib/bootstrap-tour.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="src/css/style.css" />
+
+	<script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="lib/underscore.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.noty.packaged.min.js"></script>
+	<script type="text/javascript" src="lib/notiy.js"></script>
+	<script type="text/javascript" src="lib/bootstrap-tour.min.js"></script>
+</head>
+
+<body>
+	<div id="top_panel" class="justify-content-between align-items-center">
+		<h2 class="text-center">How the Indian Constitution has evolved over the years</h2>
+		<div id="social_sharing">
+			<a class="hint tour" style="padding-right: 10px">Tour</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="hint" style="padding-right: 10px" href="#about">About</a>
+		</div>
+	</div>
+	
+	<div class="col-sm-3 heading" id="main_title">
+		<span id="tenure_heading">Government</span>
+		<div class="subheading_sub_text" id="tenure_hint">
+			<i>Hint - Click to see amended articles and amendments</i>
+		</div>
+	</div>
+	<div class="col-sm-6 heading" style="text-align: center">
+		<span id="article_heading">Articles in the Constitution of India</span><br />
+		<div class="subheading_sub_text" id="article_hint">
+			<i>Hint - Click to filter years and amendments for a
+				particular article</i>
+		</div>
+	</div>
+	<div class="col-sm-3 heading" style="text-align: right">
+		<span id="amendments_heading">List of Amendments</span>
+		<div class="subheading_sub_text" id="amendments_hint">
+			<i>Hint - Click to amended articles and years</i>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+		<div class="col-sm-12" style="margin-top: 6px">
+			<div id="reset" class="col-sm-4" style="margin-top: 6px">
+				<span class="reset_class">Reset</span>
+			</div>
+		</div>
+		<div class="col-sm-12 article_coloring_legends part_names">
+			<div id="article_added">
+				<span>Added</span>
+				<div class="box shade2 select_green_effect"></div>
+			</div>
+			<div id="article_changed">
+				<span>Changed</span>
+				<div class="box shade2 select_yellow_effect"></div>
+			</div>
+			<div id="article_removed">
+				<span>Removed</span>
+				<div class="box shade2 select_red_effect"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3"></div>
+	<div class="clearfix"></div>
+	<div class="col-sm-3 years_and_parties">
+		<div class="tenures party_inc">
+			<div class="years">
+				<span id="tenure1" class="tenure" tenures="1947-1952">Jawaharlal Nehru </span><i>(1947 - 1952)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1947-195" id="year_51_52" group="1" year="1951-1952">
+				1951
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1952-1957">Jawaharlal Nehru </span><i>(1952 - 1957)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1952-1957" id="year_52_53" group="1" year="1952-1953">
+				1952
+			</div>
+			<div class="years_box box shade1" tenures="1952-1957" id="year_53_54" group="1" year="1953-1954">
+				1953
+			</div>
+			<div class="years_box box shade1" tenures="1952-1957" id="year_54_55" group="1" year="1954-1955">
+				1954
+			</div>
+			<div class="years_box box shade1" tenures="1952-1957" id="year_55_56" group="1" year="1955-1956">
+				1955
+			</div>
+			<div class="years_box box shade1" tenures="1952-1957" id="year_56_57" group="1" year="1956-1957">
+				1956
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1957-1962">Jawaharlal Nehru </span><i>(1957 - 1962)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1957-1962" id="year_57_58" group="2" year="1957-1958">
+				1957
+			</div>
+			<div class="years_box box shade1" tenures="1957-1962" id="year_58_59" group="2" year="1958-1959">
+				1958
+			</div>
+			<div class="years_box box shade1" tenures="1957-1962" id="year_59_60" group="2" year="1959-1960">
+				1959
+			</div>
+			<div class="years_box box shade1" tenures="1957-1962" id="year_60_61" group="2" year="1960-1961">
+				1960
+			</div>
+			<div class="years_box box shade1" tenures="1957-1962" id="year_61_62" group="2" year="1961-1962">
+				1961
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1962-1967">Jawaharlal Nehru and others </span><i>(1962 - 1967)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1962-1967" id="year_62_63" group="3" year="1962-1963">
+				1962
+			</div>
+			<div class="years_box box shade1" tenures="1962-1967" id="year_63_64" group="3" year="1963-1964">
+				1963
+			</div>
+			<div class="years_box box shade1" tenures="1962-1967" id="year_64_65" group="3" year="1964-1965">
+				1964
+			</div>
+			<div class="years_box box shade1" tenures="1962-1967" id="year_65_66" group="3" year="1965-1966">
+				1965
+			</div>
+			<div class="years_box box shade1" tenures="1962-1967" id="year_66_67" group="3" year="1966-1967">
+				1966
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1967-1970">Indira Gandhi </span><i>(1967 - 1970)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1967-1970" id="year_67_68" group="4" year="1967-1968">
+				1967
+			</div>
+			<div class="years_box box shade1" tenures="1967-1970" id="year_68_69" group="4" year="1968-1969">
+				1968
+			</div>
+			<div class="years_box box shade1" tenures="1967-1970" id="year_69_70" group="4" year="1969-1970">
+				1969
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_janta_party">
+			<div class="years">
+				<span class="tenure" tenures="1971-1977">Indira Gandhi </span><i>(1971 - 1977)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1971-1977" id="year_71_72" group="5" year="1971-1972">
+				1971
+			</div>
+			<div class="years_box box shade1" tenures="1971-1977" id="year_72_73" group="5" year="1972-1973">
+				1972
+			</div>
+			<div class="years_box box shade1" tenures="1971-1977" id="year_73_74" group="5" year="1973-1974">
+				1973
+			</div>
+			<div class="years_box box shade1" tenures="1971-1977" id="year_74_75" group="5" year="1974-1975">
+				1974
+			</div>
+			<div class="years_box box shade1" tenures="1971-1977" id="year_75_76" group="5" year="1975-1976">
+				1975
+			</div>
+			<div class="years_box box shade1" tenures="1971-1977" id="year_76_77" group="5" year="1976-1977">
+				1976
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1977-1980">Morarji Desai / Charan Singh </span><i>(1977 - 1980)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1977-1980" id="year_77_78" group="6" year="1977-1978">
+				1977
+			</div>
+			<div class="years_box box shade1" tenures="1977-1980" id="year_78_79" group="6" year="1978-1979">
+				1978
+			</div>
+			<div class="years_box box shade1" tenures="1977-1980" id="year_79_80" group="6" year="1979-1980">
+				1979
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1980-1984">Indira Gandhi </span><i>(1980 - 1984)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1980-1984" id="year_80_81" group="7" year="1980-1981">
+				1980
+			</div>
+			<div class="years_box box shade1" tenures="1980-1984" id="year_81_82" group="7" year="1981-1982">
+				1981
+			</div>
+			<div class="years_box box shade1" tenures="1980-1984" id="year_82_83" group="7" year="1982-1983">
+				1982
+			</div>
+			<div class="years_box box shade1" tenures="1980-1984" id="year_83_84" group="7" year="1983-1984">
+				1983
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_national_front">
+			<div class="years">
+				<span class="tenure" tenures="1984-1989">Rajiv Gandhi </span><i>(1984 - 1989)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1984-1989" id="year_84_85" group="8" year="1984-1985">
+				1984
+			</div>
+			<div class="years_box box shade1" tenures="1984-1989" id="year_85_86" group="8" year="1985-1986">
+				1985
+			</div>
+			<div class="years_box box shade1" tenures="1984-1989" id="year_86_87" group="8" year="1986-1987">
+				1986
+			</div>
+			<div class="years_box box shade1" tenures="1984-1989" id="year_87_88" group="8" year="1987-1988">
+				1987
+			</div>
+			<div class="years_box box shade1" tenures="1984-1989" id="year_88_89" group="8" year="1988-1989">
+				1988
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_inc">
+			<div class="years">
+				<span class="tenure" tenures="1989-1991">V.P. Singh / Chandrashekhar </span><i>(1989 - 1991)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1989-1991" id="year_89_90" group="9" year="1989-1990">
+				1989
+			</div>
+			<div class="years_box box shade1" tenures="1989-1991" id="year_90_91" group="9" year="1990-1991">
+				1990
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_united_front">
+			<div class="years">
+				<span class="tenure" tenures="1991-1996">P.V. Narasimha Rao </span><i>(1991 - 1996)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1991-1996" id="year_91_92" group="10" year="1991-1992">
+				1991
+			</div>
+			<div class="years_box box shade1" tenures="1991-1996" id="year_92_93" group="10" year="1992-1993">
+				1992
+			</div>
+			<div class="years_box box shade1" tenures="1991-1996" id="year_93_94" group="10" year="1993-1994">
+				1993
+			</div>
+			<div class="years_box box shade1" tenures="1991-1996" id="year_94_95" group="10" year="1994-1995">
+				1994
+			</div>
+			<div class="years_box box shade1" tenures="1991-1996" id="year_95_96" group="10" year="1995-1996">
+				1995
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_nda">
+			<div class="years">
+				<span class="tenure" tenures="1996-1997">H.D. Deve Gowda / I.K. Gujral </span><i>(1996 - 1997)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1996-1997" id="year_96_97" group="11" year="1996-1997">
+				1996
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_nda">
+			<div class="years">
+				<span class="tenure" tenures="1998-1999">Atal Bihari Vajpayee </span><i>(1998 - 1999)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1998-1999" id="year_98_99" group="12" year="1998-1999">
+				1998
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_upa">
+			<div class="years">
+				<span class="tenure" tenures="1999-2004">Atal Bihari Vajpayee </span><i>(1999 - 2004)</i>
+			</div>
+			<div class="years_box box shade1" tenures="1999-2004" id="year_99_0" group="13" year="1999-2000">
+				1999
+			</div>
+			<div class="years_box box shade1" tenures="1999-2004" id="year_0_1" group="13" year="2000-2001">
+				2000
+			</div>
+			<div class="years_box box shade1" tenures="1999-2004" id="year_1_2" group="13" year="2001-2002">
+				2001
+			</div>
+			<div class="years_box box shade1" tenures="1999-2004" id="year_2_3" group="13" year="2002-2003">
+				2002
+			</div>
+			<div class="years_box box shade1" tenures="1999-2004" id="year_3_4" group="13" year="2003-2004">
+				2003
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_upa">
+			<div class="years">
+				<span class="tenure" tenures="2004-2009">Manmohan Singh </span><i>(2004 - 2009)</i>
+			</div>
+			<div class="years_box box shade1" tenures="2004-2009" id="year_4_5" group="14" year="2004-2005">
+				2004
+			</div>
+			<div class="years_box box shade1" tenures="2004-2009" id="year_5_6" group="14" year="2005-2006">
+				2005
+			</div>
+			<div class="years_box box shade1" tenures="2004-2009" id="year_6_7" group="14" year="2006-2007">
+				2006
+			</div>
+			<div class="years_box box shade1" tenures="2004-2009" id="year_7_8" group="14" year="2007-2008">
+				2007
+			</div>
+			<div class="years_box box shade1" tenures="2004-2009" id="year_8_9" group="14" year="2008-2009">
+				2008
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_nda">
+			<div class="years">
+				<span class="tenure" tenures="2009-2014">Manmohan Singh </span><i>(2009 - 2014)</i>
+			</div>
+			<div class="years_box box shade1" tenures="2009-2014" id="year_9_10" group="15" year="2009-2010">
+				2009
+			</div>
+			<div class="years_box box shade1" tenures="2009-2014" id="year_10_11" group="15" year="2010-2011">
+				2010
+			</div>
+			<div class="years_box box shade1" tenures="2009-2014" id="year_11_12" group="15" year="2011-2012">
+				2011
+			</div>
+			<div class="years_box box shade1" tenures="2009-2014" id="year_12_13" group="15" year="2012-2013">
+				2012
+			</div>
+			<div class="years_box box shade1" tenures="2009-2014" id="year_13_14" group="15" year="2013-2014">
+				2013
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="tenures party_nda">
+			<div class="years">
+				<span class="tenure" tenures="2014-Current">Narendra Modi </span><i>(2014 - Current)</i>
+			</div>
+			<div class="years_box box shade1" tenures="2014-Current" id="year_14_15" group="16" year="2014-2015">
+				2014
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="col-sm-6 parts_of_constitution">
+		<div class="col-xs-2 left col-without-padding">
+			<div class="part_names part_names_left part_1" id="union_and_its_territory">
+				The Union and its Territory
+			</div>
+			<div class="part_names part_names_left part_3" id="fundamental_rights">
+				Fundamental Rights
+			</div>
+			<div class="part_names part_names_left part_4a" id="fundamental_duties">
+				Fundamental Duties
+			</div>
+			<div class="part_names part_names_left part_5" id="union">
+				The Union
+			</div>
+			<div class="part_names part_names_left part_7" id="states_in_part_b_of_the_first_schedule">
+				The States in Part B of the First Schedule
+			</div>
+			<div class="part_names part_names_left part_9" id="the_panchayats">
+				The Panchayats
+			</div>
+			<div class="part_names part_names_left part_10" id="the_scheduled_and_tribal_areas">
+				The Scheduled and Tribal Areas
+			</div>
+			<div class="part_names part_names_left part_12" id="finance_property_contracts_and_suits">
+				Finance, Property, Contracts and Suits
+			</div>
+			<div class="part_names part_names_left part_14" id="services_under_the_union_and_the_states">
+				Services under the Union and the States
+			</div>
+			<div class="part_names part_names_left part_14a" id="tribunals">
+				Tribunals
+			</div>
+			<div class="part_names part_names_left part_17" id="official_language">
+				Official Language
+			</div>
+			<div class="part_names part_names_left part_18" id="emergency_provisions">
+				Emergency Provisions
+			</div>
+			<div class="part_names part_names_left part_21" id="temporary_transitional_and_special_provisions">
+				Temporary, Transitional and Special Provisions
+			</div>
+		</div>
+		<div class="col-sm-8 center col-without-padding articles_container article-list">
+			<div id="parts_div">
+				<div id="part_1" class="part">
+					<div class="box shade2" id="article_1">1</div>
+					<div class="box shade2" id="article_2">2</div>
+					<div class="box shade2" id="article_2a">2-A</div>
+					<div class="box shade2" id="article_3">3</div>
+					<div class="box shade2" id="article_4">4</div>
+				</div>
+				<div id="part_2" class="part">
+					<div class="box shade1" id="article_5">5</div>
+					<div class="box shade1" id="article_6">6</div>
+					<div class="box shade1" id="article_7">7</div>
+					<div class="box shade1" id="article_8">8</div>
+					<div class="box shade1" id="article_9">9</div>
+					<div class="box shade1" id="article_10">10</div>
+					<div class="box shade1" id="article_11">11</div>
+				</div>
+				<div id="part_3" class="part">
+					<div class="box shade2" id="article_12">12</div>
+					<div class="box shade2" id="article_13">13</div>
+					<div class="box shade2" id="article_14">14</div>
+					<div class="box shade2" id="article_15">15</div>
+					<div class="box shade2" id="article_16">16</div>
+					<div class="box shade2" id="article_17">17</div>
+					<div class="box shade2" id="article_18">18</div>
+					<div class="box shade2" id="article_19">19</div>
+					<div class="box shade2" id="article_20">20</div>
+					<div class="box shade2" id="article_21">21</div>
+					<div class="box shade2" id="article_21a">21-A</div>
+					<div class="box shade2" id="article_22">22</div>
+					<div class="box shade2" id="article_23">23</div>
+					<div class="box shade2" id="article_24">24</div>
+					<div class="box shade2" id="article_25">25</div>
+					<div class="box shade2" id="article_26">26</div>
+					<div class="box shade2" id="article_27">27</div>
+					<div class="box shade2" id="article_28">28</div>
+					<div class="box shade2" id="article_29">29</div>
+					<div class="box shade2" id="article_30">30</div>
+					<div class="box shade2" id="article_31">31</div>
+					<div class="box shade2" id="article_31a">31-A</div>
+					<div class="box shade2" id="article_31b">31-B</div>
+					<div class="box shade2" id="article_31c">31-C</div>
+					<div class="box shade2" id="article_31d">31-D</div>
+					<div class="box shade2" id="article_32">32</div>
+					<div class="box shade2" id="article_32a">32-A</div>
+					<div class="box shade2" id="article_33">33</div>
+					<div class="box shade2" id="article_34">34</div>
+					<div class="box shade2" id="article_35">35</div>
+				</div>
+				<div id="part_4" class="part">
+					<div class="box shade1" id="article_36">36</div>
+					<div class="box shade1" id="article_37">37</div>
+					<div class="box shade1" id="article_38">38</div>
+					<div class="box shade1" id="article_39">39</div>
+					<div class="box shade1" id="article_39a">39-A</div>
+					<div class="box shade1" id="article_40">40</div>
+					<div class="box shade1" id="article_41">41</div>
+					<div class="box shade1" id="article_42">42</div>
+					<div class="box shade1" id="article_43">43</div>
+					<div class="box shade1" id="article_43b">43-B</div>
+					<div class="box shade1" id="article_43a">43-A</div>
+					<div class="box shade1" id="article_44">44</div>
+					<div class="box shade1" id="article_45">45</div>
+					<div class="box shade1" id="article_46">46</div>
+					<div class="box shade1" id="article_47">47</div>
+					<div class="box shade1" id="article_48">48</div>
+					<div class="box shade1" id="article_48a">48-A</div>
+					<div class="box shade1" id="article_49">49</div>
+					<div class="box shade1" id="article_50">50</div>
+					<div class="box shade1" id="article_51">51</div>
+				</div>
+				<div id="part_4a" class="part">
+					<div class="box shade2" id="article_51a">51-A</div>
+				</div>
+				<div id="part_5" class="part">
+					<div class="box shade1" id="article_52">52</div>
+					<div class="box shade1" id="article_53">53</div>
+					<div class="box shade1" id="article_54">54</div>
+					<div class="box shade1" id="article_55">55</div>
+					<div class="box shade1" id="article_56">56</div>
+					<div class="box shade1" id="article_57">57</div>
+					<div class="box shade1" id="article_58">58</div>
+					<div class="box shade1" id="article_59">59</div>
+					<div class="box shade1" id="article_60">60</div>
+					<div class="box shade1" id="article_61">61</div>
+					<div class="box shade1" id="article_62">62</div>
+					<div class="box shade1" id="article_63">63</div>
+					<div class="box shade1" id="article_64">64</div>
+					<div class="box shade1" id="article_65">65</div>
+					<div class="box shade1" id="article_66">66</div>
+					<div class="box shade1" id="article_67">67</div>
+					<div class="box shade1" id="article_68">68</div>
+					<div class="box shade1" id="article_69">69</div>
+					<div class="box shade1" id="article_70">70</div>
+					<div class="box shade1" id="article_71">71</div>
+					<div class="box shade1" id="article_72">72</div>
+					<div class="box shade1" id="article_73">73</div>
+					<div class="box shade1" id="article_74">74</div>
+					<div class="box shade1" id="article_75">75</div>
+					<div class="box shade1" id="article_76">76</div>
+					<div class="box shade1" id="article_77">77</div>
+					<div class="box shade1" id="article_78">78</div>
+					<div class="box shade1" id="article_79">79</div>
+					<div class="box shade1" id="article_80">80</div>
+					<div class="box shade1" id="article_81">81</div>
+					<div class="box shade1" id="article_82">82</div>
+					<div class="box shade1" id="article_83">83</div>
+					<div class="box shade1" id="article_84">84</div>
+					<div class="box shade1" id="article_85">85</div>
+					<div class="box shade1" id="article_86">86</div>
+					<div class="box shade1" id="article_87">87</div>
+					<div class="box shade1" id="article_88">88</div>
+					<div class="box shade1" id="article_89">89</div>
+					<div class="box shade1" id="article_90">90</div>
+					<div class="box shade1" id="article_91">91</div>
+					<div class="box shade1" id="article_92">92</div>
+					<div class="box shade1" id="article_93">93</div>
+					<div class="box shade1" id="article_94">94</div>
+					<div class="box shade1" id="article_95">95</div>
+					<div class="box shade1" id="article_96">96</div>
+					<div class="box shade1" id="article_97">97</div>
+					<div class="box shade1" id="article_98">98</div>
+					<div class="box shade1" id="article_99">99</div>
+					<div class="box shade1" id="article_100">100</div>
+					<div class="box shade1" id="article_101">101</div>
+					<div class="box shade1" id="article_102">102</div>
+					<div class="box shade1" id="article_103">103</div>
+					<div class="box shade1" id="article_104">104</div>
+					<div class="box shade1" id="article_105">105</div>
+					<div class="box shade1" id="article_106">106</div>
+					<div class="box shade1" id="article_107">107</div>
+					<div class="box shade1" id="article_108">108</div>
+					<div class="box shade1" id="article_109">109</div>
+					<div class="box shade1" id="article_110">110</div>
+					<div class="box shade1" id="article_111">111</div>
+					<div class="box shade1" id="article_112">112</div>
+					<div class="box shade1" id="article_113">113</div>
+					<div class="box shade1" id="article_114">114</div>
+					<div class="box shade1" id="article_115">115</div>
+					<div class="box shade1" id="article_116">116</div>
+					<div class="box shade1" id="article_117">117</div>
+					<div class="box shade1" id="article_118">118</div>
+					<div class="box shade1" id="article_119">119</div>
+					<div class="box shade1" id="article_120">120</div>
+					<div class="box shade1" id="article_121">121</div>
+					<div class="box shade1" id="article_122">122</div>
+					<div class="box shade1" id="article_123">123</div>
+					<div class="box shade1" id="article_124">124</div>
+					<div class="box shade1" id="article_124a">124-A</div>
+					<div class="box shade1" id="article_124b">124-B</div>
+					<div class="box shade1" id="article_124c">124-C</div>
+					<div class="box shade1" id="article_125">125</div>
+					<div class="box shade1" id="article_126">126</div>
+					<div class="box shade1" id="article_127">127</div>
+					<div class="box shade1" id="article_128">128</div>
+					<div class="box shade1" id="article_129">129</div>
+					<div class="box shade1" id="article_130">130</div>
+					<div class="box shade1" id="article_131">131</div>
+					<div class="box shade1" id="article_131a">131-A</div>
+					<div class="box shade1" id="article_132">132</div>
+					<div class="box shade1" id="article_133">133</div>
+					<div class="box shade1" id="article_134">134</div>
+					<div class="box shade1" id="article_134a">134-A</div>
+					<div class="box shade1" id="article_135">135</div>
+					<div class="box shade1" id="article_136">136</div>
+					<div class="box shade1" id="article_137">137</div>
+					<div class="box shade1" id="article_138">138</div>
+					<div class="box shade1" id="article_139">139</div>
+					<div class="box shade1" id="article_139a">139-A</div>
+					<div class="box shade1" id="article_140">140</div>
+					<div class="box shade1" id="article_141">141</div>
+					<div class="box shade1" id="article_142">142</div>
+					<div class="box shade1" id="article_143">143</div>
+					<div class="box shade1" id="article_144">144</div>
+					<div class="box shade1" id="article_144a">144-A</div>
+					<div class="box shade1" id="article_145">145</div>
+					<div class="box shade1" id="article_146">146</div>
+					<div class="box shade1" id="article_147">147</div>
+					<div class="box shade1" id="article_148">148</div>
+					<div class="box shade1" id="article_149">149</div>
+					<div class="box shade1" id="article_150">150</div>
+					<div class="box shade1" id="article_151">151</div>
+				</div>
+				<div id="part_6" class="part">
+					<div class="box shade2" id="article_152">152</div>
+					<div class="box shade2" id="article_153">153</div>
+					<div class="box shade2" id="article_154">154</div>
+					<div class="box shade2" id="article_155">155</div>
+					<div class="box shade2" id="article_156">156</div>
+					<div class="box shade2" id="article_157">157</div>
+					<div class="box shade2" id="article_158">158</div>
+					<div class="box shade2" id="article_159">159</div>
+					<div class="box shade2" id="article_160">160</div>
+					<div class="box shade2" id="article_161">161</div>
+					<div class="box shade2" id="article_162">162</div>
+					<div class="box shade2" id="article_163">163</div>
+					<div class="box shade2" id="article_164">164</div>
+					<div class="box shade2" id="article_165">165</div>
+					<div class="box shade2" id="article_166">166</div>
+					<div class="box shade2" id="article_167">167</div>
+					<div class="box shade2" id="article_168">168</div>
+					<div class="box shade2" id="article_169">169</div>
+					<div class="box shade2" id="article_170">170</div>
+					<div class="box shade2" id="article_171">171</div>
+					<div class="box shade2" id="article_172">172</div>
+					<div class="box shade2" id="article_173">173</div>
+					<div class="box shade2" id="article_174">174</div>
+					<div class="box shade2" id="article_175">175</div>
+					<div class="box shade2" id="article_176">176</div>
+					<div class="box shade2" id="article_177">177</div>
+					<div class="box shade2" id="article_178">178</div>
+					<div class="box shade2" id="article_179">179</div>
+					<div class="box shade2" id="article_180">180</div>
+					<div class="box shade2" id="article_181">181</div>
+					<div class="box shade2" id="article_182">182</div>
+					<div class="box shade2" id="article_183">183</div>
+					<div class="box shade2" id="article_184">184</div>
+					<div class="box shade2" id="article_185">185</div>
+					<div class="box shade2" id="article_186">186</div>
+					<div class="box shade2" id="article_187">187</div>
+					<div class="box shade2" id="article_188">188</div>
+					<div class="box shade2" id="article_189">189</div>
+					<div class="box shade2" id="article_190">190</div>
+					<div class="box shade2" id="article_200">200</div>
+					<div class="box shade2" id="article_201">201</div>
+					<div class="box shade2" id="article_202">202</div>
+					<div class="box shade2" id="article_203">203</div>
+					<div class="box shade2" id="article_204">204</div>
+					<div class="box shade2" id="article_205">205</div>
+					<div class="box shade2" id="article_206">206</div>
+					<div class="box shade2" id="article_207">207</div>
+					<div class="box shade2" id="article_208">208</div>
+					<div class="box shade2" id="article_209">209</div>
+					<div class="box shade2" id="article_210">210</div>
+					<div class="box shade2" id="article_211">211</div>
+					<div class="box shade2" id="article_212">212</div>
+					<div class="box shade2" id="article_213">213</div>
+					<div class="box shade2" id="article_214">214</div>
+					<div class="box shade2" id="article_215">215</div>
+					<div class="box shade2" id="article_216">216</div>
+					<div class="box shade2" id="article_217">217</div>
+					<div class="box shade2" id="article_218">218</div>
+					<div class="box shade2" id="article_219">219</div>
+					<div class="box shade2" id="article_220">220</div>
+					<div class="box shade2" id="article_221">221</div>
+					<div class="box shade2" id="article_222">222</div>
+					<div class="box shade2" id="article_223">223</div>
+					<div class="box shade2" id="article_224">224</div>
+					<div class="box shade2" id="article_224a">224-A</div>
+					<div class="box shade2" id="article_225">225</div>
+					<div class="box shade2" id="article_226">226</div>
+					<div class="box shade2" id="article_226a">226-A</div>
+					<div class="box shade2" id="article_227">227</div>
+					<div class="box shade2" id="article_228">228</div>
+					<div class="box shade2" id="article_229">229</div>
+					<div class="box shade2" id="article_230">230</div>
+					<div class="box shade2" id="article_231">231</div>
+					<div class="box shade2" id="article_232">232</div>
+					<div class="box shade2" id="article_233">233</div>
+					<div class="box shade2" id="article_233a">233-A</div>
+					<div class="box shade2" id="article_234">234</div>
+					<div class="box shade2" id="article_235">235</div>
+					<div class="box shade2" id="article_236">236</div>
+					<div class="box shade2" id="article_237">237</div>
+				</div>
+				<div id="part_7" class="part">
+					<div class="box shade1" id="article_238">238</div>
+				</div>
+				<div id="part_8" class="part">
+					<div class="box shade2" id="article_239">239</div>
+					<div class="box shade2" id="article_239a">239-A</div>
+					<div class="box shade2" id="article_239aa">239-AA</div>
+					<div class="box shade2" id="article_239ab">239-AB</div>
+					<div class="box shade2" id="article_239b">239-B</div>
+					<div class="box shade2" id="article_240">240</div>
+					<div class="box shade2" id="article_241">241</div>
+					<div class="box shade2" id="article_242">242</div>
+				</div>
+				<div id="part_9" class="part">
+					<div class="box shade1" id="article_243">243</div>
+					<div class="box shade1" id="article_243a">243-A</div>
+					<div class="box shade1" id="article_243b">243-B</div>
+					<div class="box shade1" id="article_243c">243-C</div>
+					<div class="box shade1" id="article_243d">243-D</div>
+					<div class="box shade1" id="article_243e">243-E</div>
+					<div class="box shade1" id="article_243f">243-F</div>
+					<div class="box shade1" id="article_243g">243-G</div>
+					<div class="box shade1" id="article_243h">243-H</div>
+					<div class="box shade1" id="article_243i">243-I</div>
+					<div class="box shade1" id="article_243j">243-J</div>
+					<div class="box shade1" id="article_243k">243-K</div>
+					<div class="box shade1" id="article_243l">243-L</div>
+					<div class="box shade1" id="article_243m">243-M</div>
+					<div class="box shade1" id="article_243n">243-N</div>
+					<div class="box shade1" id="article_243o">243-O</div>
+				</div>
+				<div id="part_9a" class="part">
+					<div class="box shade2" id="article_243p">243-P</div>
+					<div class="box shade2" id="article_243q">243-Q</div>
+					<div class="box shade2" id="article_243r">243-R</div>
+					<div class="box shade2" id="article_243s">243-S</div>
+					<div class="box shade2" id="article_243t">243-T</div>
+					<div class="box shade2" id="article_243u">243-U</div>
+					<div class="box shade2" id="article_243v">243-V</div>
+					<div class="box shade2" id="article_243w">243-W</div>
+					<div class="box shade2" id="article_243x">243-X</div>
+					<div class="box shade2" id="article_243y">243-Y</div>
+					<div class="box shade2" id="article_243z">243-Z</div>
+					<div class="box shade2" id="article_243za">243-ZA</div>
+					<div class="box shade2" id="article_243zb">243-ZB</div>
+					<div class="box shade2" id="article_243zc">243-ZC</div>
+					<div class="box shade2" id="article_243zd">243-ZD</div>
+					<div class="box shade2" id="article_243ze">243-ZE</div>
+					<div class="box shade2" id="article_243zf">243-ZF</div>
+					<div class="box shade2" id="article_243zg">243-ZG</div>
+				</div>
+				<div id="part_10" class="part">
+					<div class="box shade1" id="article_244">244</div>
+					<div class="box shade1" id="article_244a">244-A</div>
+				</div>
+				<div id="part_11" class="part">
+					<div class="box shade2" id="article_245">245</div>
+					<div class="box shade2" id="article_246">246</div>
+					<div class="box shade2" id="article_247">247</div>
+					<div class="box shade2" id="article_248">248</div>
+					<div class="box shade2" id="article_249">249</div>
+					<div class="box shade2" id="article_250">250</div>
+					<div class="box shade2" id="article_251">251</div>
+					<div class="box shade2" id="article_252">252</div>
+					<div class="box shade2" id="article_253">253</div>
+					<div class="box shade2" id="article_254">254</div>
+					<div class="box shade2" id="article_255">255</div>
+					<div class="box shade2" id="article_256">256</div>
+					<div class="box shade2" id="article_257">257</div>
+					<div class="box shade2" id="article_257a">257-A</div>
+					<div class="box shade2" id="article_258">258</div>
+					<div class="box shade2" id="article_258a">258-A</div>
+					<div class="box shade2" id="article_259">259</div>
+					<div class="box shade2" id="article_260">260</div>
+					<div class="box shade2" id="article_261">261</div>
+					<div class="box shade2" id="article_262">262</div>
+					<div class="box shade2" id="article_263">263</div>
+				</div>
+				<div id="part_12" class="part">
+					<div class="box shade1" id="article_264">264</div>
+					<div class="box shade1" id="article_265">265</div>
+					<div class="box shade1" id="article_266">266</div>
+					<div class="box shade1" id="article_267">267</div>
+					<div class="box shade1" id="article_268a">268-A</div>
+					<div class="box shade1" id="article_269">269</div>
+					<div class="box shade1" id="article_270">270</div>
+					<div class="box shade1" id="article_271">271</div>
+					<div class="box shade1" id="article_272">272</div>
+					<div class="box shade1" id="article_273">273</div>
+					<div class="box shade1" id="article_274">274</div>
+					<div class="box shade1" id="article_275">275</div>
+					<div class="box shade1" id="article_276">276</div>
+					<div class="box shade1" id="article_277">277</div>
+					<div class="box shade1" id="article_278">278</div>
+					<div class="box shade1" id="article_279">279</div>
+					<div class="box shade1" id="article_280">280</div>
+					<div class="box shade1" id="article_281">281</div>
+					<div class="box shade1" id="article_282">282</div>
+					<div class="box shade1" id="article_283">283</div>
+					<div class="box shade1" id="article_284">284</div>
+					<div class="box shade1" id="article_285">285</div>
+					<div class="box shade1" id="article_286">286</div>
+					<div class="box shade1" id="article_287">287</div>
+					<div class="box shade1" id="article_288">288</div>
+					<div class="box shade1" id="article_289">289</div>
+					<div class="box shade1" id="article_290">290</div>
+					<div class="box shade1" id="article_290a">290-A</div>
+					<div class="box shade1" id="article_291">291</div>
+					<div class="box shade1" id="article_292">292</div>
+					<div class="box shade1" id="article_293">293</div>
+					<div class="box shade1" id="article_294">294</div>
+					<div class="box shade1" id="article_295">295</div>
+					<div class="box shade1" id="article_296">296</div>
+					<div class="box shade1" id="article_297">297</div>
+					<div class="box shade1" id="article_298">298</div>
+					<div class="box shade1" id="article_299">299</div>
+					<div class="box shade1" id="article_300">300</div>
+					<div class="box shade1" id="article_300a">300-A</div>
+				</div>
+				<div id="part_13" class="part">
+					<div class="box shade2" id="article_301">301</div>
+					<div class="box shade2" id="article_302">302</div>
+					<div class="box shade2" id="article_303">303</div>
+					<div class="box shade2" id="article_304">304</div>
+					<div class="box shade2" id="article_305">305</div>
+					<div class="box shade2" id="article_306">306</div>
+					<div class="box shade2" id="article_307">307</div>
+				</div>
+				<div id="part_14" class="part">
+					<div class="box shade1" id="article_308">308</div>
+					<div class="box shade1" id="article_309">309</div>
+					<div class="box shade1" id="article_310">310</div>
+					<div class="box shade1" id="article_311">311</div>
+					<div class="box shade1" id="article_312">312</div>
+					<div class="box shade1" id="article_312a">312-A</div>
+					<div class="box shade1" id="article_313">313</div>
+					<div class="box shade1" id="article_314">314</div>
+					<div class="box shade1" id="article_315">315</div>
+					<div class="box shade1" id="article_316">316</div>
+					<div class="box shade1" id="article_317">317</div>
+					<div class="box shade1" id="article_318">318</div>
+					<div class="box shade1" id="article_319">319</div>
+					<div class="box shade1" id="article_320">320</div>
+					<div class="box shade1" id="article_321">321</div>
+					<div class="box shade1" id="article_322">322</div>
+					<div class="box shade1" id="article_323">323</div>
+				</div>
+				<div id="part_14a" class="part">
+					<div class="box shade2" id="article_323a">323-A</div>
+					<div class="box shade2" id="article_323b">323-B</div>
+				</div>
+				<div id="part_15" class="part">
+					<div class="box shade1" id="article_324">324</div>
+					<div class="box shade1" id="article_325">325</div>
+					<div class="box shade1" id="article_326">326</div>
+					<div class="box shade1" id="article_327">327</div>
+					<div class="box shade1" id="article_328">328</div>
+					<div class="box shade1" id="article_329">329</div>
+					<div class="box shade1" id="article_329a">329-A</div>
+				</div>
+				<div id="part_16" class="part">
+					<div class="box shade2" id="article_330">330</div>
+					<div class="box shade2" id="article_331">331</div>
+					<div class="box shade2" id="article_332">332</div>
+					<div class="box shade2" id="article_333">333</div>
+					<div class="box shade2" id="article_334">334</div>
+					<div class="box shade2" id="article_335">335</div>
+					<div class="box shade2" id="article_336">336</div>
+					<div class="box shade2" id="article_337">337</div>
+					<div class="box shade2" id="article_338a">338-A</div>
+					<div class="box shade2" id="article_339">339</div>
+					<div class="box shade2" id="article_340">340</div>
+					<div class="box shade2" id="article_341">341</div>
+					<div class="box shade2" id="article_342">342</div>
+				</div>
+				<div id="part_17" class="part">
+					<div class="box shade1" id="article_343">343</div>
+					<div class="box shade1" id="article_344">344</div>
+					<div class="box shade1" id="article_345">345</div>
+					<div class="box shade1" id="article_346">346</div>
+					<div class="box shade1" id="article_347">347</div>
+					<div class="box shade1" id="article_348">348</div>
+					<div class="box shade1" id="article_349">349</div>
+					<div class="box shade1" id="article_350">350</div>
+					<div class="box shade1" id="article_350a">350-A</div>
+					<div class="box shade1" id="article_350b">350-B</div>
+					<div class="box shade1" id="article_351">351</div>
+				</div>
+				<div id="part_18" class="part">
+					<div class="box shade2" id="article_352">352</div>
+					<div class="box shade2" id="article_353">353</div>
+					<div class="box shade2" id="article_354">354</div>
+					<div class="box shade2" id="article_355">355</div>
+					<div class="box shade2" id="article_356">356</div>
+					<div class="box shade2" id="article_357">357</div>
+					<div class="box shade2" id="article_358">358</div>
+					<div class="box shade2" id="article_359">359</div>
+					<div class="box shade2" id="article_359a">359-A</div>
+					<div class="box shade2" id="article_360">360</div>
+				</div>
+				<div id="part_19" class="part">
+					<div class="box shade1" id="article_361">361</div>
+					<div class="box shade1" id="article_361a">361-A</div>
+					<div class="box shade1" id="article_361b">361-B</div>
+					<div class="box shade1" id="article_362">362</div>
+					<div class="box shade1" id="article_363">363</div>
+					<div class="box shade1" id="article_364">364</div>
+					<div class="box shade1" id="article_365">365</div>
+					<div class="box shade1" id="article_366">366</div>
+					<div class="box shade1" id="article_367">367</div>
+				</div>
+				<div id="part_20" class="part">
+					<div class="box shade2" id="article_368">368</div>
+				</div>
+				<div id="part_21" class="part">
+					<div class="box shade1" id="article_369">369</div>
+					<div class="box shade1" id="article_370">370</div>
+					<div class="box shade1" id="article_371">371</div>
+					<div class="box shade1" id="article_371a">371-A</div>
+					<div class="box shade1" id="article_371b">371-B</div>
+					<div class="box shade1" id="article_371c">371-C</div>
+					<div class="box shade1" id="article_371d">371-D</div>
+					<div class="box shade1" id="article_371e">371-E</div>
+					<div class="box shade1" id="article_371f">371-F</div>
+					<div class="box shade1" id="article_371g">371-G</div>
+					<div class="box shade1" id="article_371h">371-H</div>
+					<div class="box shade1" id="article_371i">371-I</div>
+					<div class="box shade1" id="article_371j">371-J</div>
+					<div class="box shade1" id="article_372">372</div>
+					<div class="box shade1" id="article_372a">372-A</div>
+					<div class="box shade1" id="article_373">373</div>
+					<div class="box shade1" id="article_374">374</div>
+					<div class="box shade1" id="article_375">375</div>
+					<div class="box shade1" id="article_376">376</div>
+					<div class="box shade1" id="article_377">377</div>
+					<div class="box shade1" id="article_378">378</div>
+					<div class="box shade1" id="article_378a">378-A</div>
+					<div class="box shade1" id="article_379-391">
+						379-391
+					</div>
+					<div class="box shade1" id="article_392">392</div>
+				</div>
+				<div id="part_22" class="part">
+					<div class="box shade2" id="article_393">393</div>
+					<div class="box shade2" id="article_394">394</div>
+					<div class="box shade2" id="article_394a">394-A</div>
+					<div class="box shade2" id="article_395">395</div>
+				</div>
+			</div>
+			<div id="schedules_label" class="col-sm-12 heading" style="text-align: center">
+				<span id="schedule_heading">Schedules in the Constitution of India</span><br />
+				<div class="subheading_sub_text" id="article_hint">
+					<i>Hint - Click to filter years and amendments for a
+						particular schedule</i>
+				</div>
+			</div>
+			<div id="schedules" class="part">
+				<div class="box shade2" id="sched_1">1</div>
+				<div class="box shade2" id="sched_2">2</div>
+				<div class="box shade2" id="sched_3">3</div>
+				<div class="box shade2" id="sched_4">4</div>
+				<div class="box shade2" id="sched_5">5</div>
+				<div class="box shade2" id="sched_6">6</div>
+				<div class="box shade2" id="sched_7">7</div>
+				<div class="box shade2" id="sched_8">8</div>
+				<div class="box shade2" id="sched_9">9</div>
+				<div class="box shade2" id="sched_10">10</div>
+				<div class="box shade2" id="sched_11">11</div>
+				<div class="box shade2" id="sched_12">12</div>
+			</div>
+		</div>
+		<div class="col-xs-2 right col-without-padding">
+			<div class="part_names part_2" id="citizenship">
+				Citizenship
+			</div>
+			<div class="part_names part_4" id="directive_principles_of_state_policy">
+				Directive Principles of State Policy
+			</div>
+			<div class="part_names part_6" id="states">The States</div>
+			<div class="part_names part_8" id="union_territories">
+				The Union Territories
+			</div>
+			<div class="part_names part_9a" id="municipalities">
+				The Municipalities
+			</div>
+			<div class="part_names part_11" id="relations_between_the_union_and_the_states">
+				Relations Between the Union and the States
+			</div>
+			<div class="part_names part_13" id="trade_commerce_and_intercourse_within_the_territory_of_india">
+				Trade, Commerce and Intercourse within the Territory of
+				India
+			</div>
+			<div class="part_names part_15" id="elections">Elections</div>
+			<div class="part_names part_16" id="special_provisions_relating_to_certain_classes">
+				Special Provisions relating to Certain Classes
+			</div>
+			<div class="part_names part_19" id="miscellaneous">
+				Miscellaneous
+			</div>
+			<div class="part_names part_20" id="amendment_of_the_constitution">
+				Amendment of the Constitution
+			</div>
+			<div class="part_names part_22" id="short_title_commencement_authoritative_text">
+				Short Title, Commencement, Authoritative text in Hindi and
+				Repeals
+			</div>
+		</div>
+	</div>
+	<div id="right_side_bar" class="col-sm-3">
+		<div id="selected_ammendments"></div>
+		<div class="list_of_amendments">
+			<ul class="list-group list_group_class"></ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="extra_space"></div>
+	<div class="col-sm-12 align-items-center" id="about">
+		<hr />
+		<div class="col-sm-8 ">
+			<h2 style="font-size: 18px; font-weight: 800">Credits</h2>
+			<p>
+				The data was compiled by Rukmini Shrinivasan of
+				<a href="http://www.thehindu.com/data/how-the-constitution-has-evolved-over-the-years/article7263635.ece"
+					target="_blank" style="font-size: 14px">The Hindu</a>
+				using data from
+				<a href="http://vidhilegalpolicy.in/" target="_blank" style="font-size: 14px">Vidhi Centre for Legal
+					Policy</a>
+				and
+				<a href="http://www.prsindia.org/" target="_blank" style="font-size: 14px">PRS Legislative Research</a>.
+				The visualisation was designed and built by
+				<a href="https://pykih.com" target="_blank" style="font-size: 14px">Pykih.com</a>. Archived and bug
+				fixed by Anand.
+			</p>
+		</div>
+		<hr />
+	</div>
+	<div class="clearfix"></div>
+	<div class="extra_space"></div>
+	<div class="extra_space"></div>
+	<div class="extra_space"></div>
+
+	<script type="text/javascript" src="src/js/custom.js"></script>
+	<script type="text/javascript">
+		var k = new hindu.Constitution();
+		k.execute();
+	</script>
+</body>
+
+</html>
+
+<!-- hardware assets -->
