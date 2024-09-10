@@ -405,11 +405,7 @@ hindu.Constitution = function (option) {
 			$("#article_heading").html("");
 			$("#tenure_heading").html("All amendments to Article "+$(this).html());
 
-			var value = (this.id).toUpperCase().substr((this.id).indexOf('_') + 1, (this.id).length)
-				, custom_data = _.where(full_data,{"article": value, "type": "A"})
-				, id;
-			if(custom_data.length !== 0) {
-				$.noty.closeAll()
+			$.noty.closeAll()
 				$('.list_class').removeClass('list-select');
 				$('.box').removeClass('select_effect');
 				$('#parts_div .box').removeClass('select_yellow_effect');
@@ -418,6 +414,31 @@ hindu.Constitution = function (option) {
 				$('.years_box').removeClass('select_effect');
 				$("#selected_ammendments .list_class").appendTo('.list_of_amendments');
 				$("#selected_ammendments").html("<span style='font-size:14px;text-align:right;color:#333;margin-right:20px;margin-top:4px;' class='pull-right'>Related Amendments</span>");
+
+			
+
+			var value = (this.id).toUpperCase().substr((this.id).indexOf('_') + 1, (this.id).length)
+				, custom_data = _.where(full_data,{"article": value, "type": "A"})
+				, id;
+
+			$(this).addClass('select_effect');
+			var url = window.location.href;
+			if(getParameterByName('article').length === 0 && url.indexOf('?') < 0) {
+				replace_value = "?article="+value;
+				history.pushState(null, null, url+replace_value);
+			} else if(getParameterByName('article').length === 0 && url.indexOf('?') > 0) {
+				url = url.substr(0,url.indexOf('?'));
+				replace_value = "?article="+value;
+				history.pushState(null, null, url+replace_value);
+			} else {
+				replace_value = "?article="+getParameterByName("article");
+				param_value = "?article="+value;
+				search_page_url = window.location.href.replace(replace_value,param_value);
+				history.replaceState(null, null, search_page_url);
+			}
+
+			if(custom_data.length !== 0) {
+				
 				for(var i=0; i<custom_data.length;i++) {
 					id = parseInt(custom_data[i].amendment) - 1;
 					$('.list_class#' + (id)).addClass('list-select');
@@ -445,22 +466,9 @@ hindu.Constitution = function (option) {
 				if ($("#selected_ammendments").html().length>0) {
 					// $("#selected_ammendments").css("border-bottom","4px solid lightgrey");
 				}
-				$(this).addClass('select_effect');
-				var url = window.location.href;
-				if(getParameterByName('article').length === 0 && url.indexOf('?') < 0) {
-					replace_value = "?article="+value;
-	                history.pushState(null, null, url+replace_value);
-				} else if(getParameterByName('article').length === 0 && url.indexOf('?') > 0) {
-					url = url.substr(0,url.indexOf('?'));
-					replace_value = "?article="+value;
-					history.pushState(null, null, url+replace_value);
-				} else {
-					replace_value = "?article="+getParameterByName("article");
-	                param_value = "?article="+value;
-	                search_page_url = window.location.href.replace(replace_value,param_value);
-	                history.replaceState(null, null, search_page_url);
-				}
+				
 			}else {
+				$("#tenure_heading").html("No amendments to Article "+$(this).html());
 				generate_notify({text: "No amendments made", notify: "error",timeout:false});
 			}
 		});
@@ -472,22 +480,19 @@ hindu.Constitution = function (option) {
 				$(".articles_container .box").css("background-color", "");
 				is_heatmap = false;
 			}
-			var value = (this.id).substr((this.id).indexOf('_') + 1, (this.id).length)
-				, custom_data = _.where(full_data,{"article": value, "type": "S"})
-				, id;
-			if(custom_data.length !== 0) {
-				if($("#main_title").hasClass("col-sm-3")) {
-					$("#main_title").removeClass("col-sm-3");
-					$("#main_title").addClass("col-sm-4");
-				}
-				$("#amendments_heading").html("");
-				$("#article_hint").html("");
-				$("#amendments_hint").html("");
-				$("#tenure_hint").html("");
-				$("#article_heading").html("");
-				$("#tenure_heading").html("All amendments to Schedule "+$(this).html());
 
-				$.noty.closeAll()
+			if($("#main_title").hasClass("col-sm-3")) {
+				$("#main_title").removeClass("col-sm-3");
+				$("#main_title").addClass("col-sm-4");
+			}
+			$("#amendments_heading").html("");
+			$("#article_hint").html("");
+			$("#amendments_hint").html("");
+			$("#tenure_hint").html("");
+			$("#article_heading").html("");
+			$("#tenure_heading").html("All amendments to Schedule "+$(this).html());
+
+			$.noty.closeAll()
 				$('.list_class').removeClass('list-select');
 				$('.box').removeClass('select_effect');
 				$('#parts_div .box').removeClass('select_yellow_effect');
@@ -496,6 +501,31 @@ hindu.Constitution = function (option) {
 				$('.years_box').removeClass('select_effect');
 				$("#selected_ammendments .list_class").appendTo('.list_of_amendments');
 				$("#selected_ammendments").html("<span style='font-size:14px;text-align:right;color:#333;margin-right:20px;margin-top:4px;' class='pull-right'>Related Amendments</span>");
+
+			
+
+			var value = (this.id).substr((this.id).indexOf('_') + 1, (this.id).length)
+				, custom_data = _.where(full_data,{"article": value, "type": "S"})
+				, id;
+
+			$(this).addClass('select_effect')
+			var url = window.location.href;
+			if(getParameterByName('schedule').length === 0 && url.indexOf('?') < 0) {
+				replace_value = "?schedule="+value;
+				history.pushState(null, null, url+replace_value);
+			} else if(getParameterByName('schedule').length === 0 && url.indexOf('?') > 0) {
+				url = url.substr(0,url.indexOf('?'));
+				replace_value = "?schedule="+value;
+				history.pushState(null, null, url+replace_value);
+			} else {
+				replace_value = "?schedule="+getParameterByName("schedule");
+				param_value = "?schedule="+value;
+				search_page_url = window.location.href.replace(replace_value,param_value);
+				history.replaceState(null, null, search_page_url);
+			}
+
+			if(custom_data.length !== 0) {
+				
 				for(var i=0; i<custom_data.length;i++) {
 					id = parseInt(custom_data[i].amendment) - 1;
 					$('.list_class#' + (id)).addClass('list-select');
@@ -523,22 +553,9 @@ hindu.Constitution = function (option) {
 				if ($("#selected_ammendments").html().length>0) {
 					// $("#selected_ammendments").css("border-bottom","4px solid lightgrey");
 				}
-				$(this).addClass('select_effect')
-				var url = window.location.href;
-				if(getParameterByName('schedule').length === 0 && url.indexOf('?') < 0) {
-					replace_value = "?schedule="+value;
-	                history.pushState(null, null, url+replace_value);
-				} else if(getParameterByName('schedule').length === 0 && url.indexOf('?') > 0) {
-					url = url.substr(0,url.indexOf('?'));
-					replace_value = "?schedule="+value;
-					history.pushState(null, null, url+replace_value);
-				} else {
-					replace_value = "?schedule="+getParameterByName("schedule");
-	                param_value = "?schedule="+value;
-	                search_page_url = window.location.href.replace(replace_value,param_value);
-	                history.replaceState(null, null, search_page_url);
-				}
+				
 			}else {
+				$("#tenure_heading").html("No amendments to Schedule "+$(this).html());
 				generate_notify({text: "No amendments made", notify: "error",timeout:false});
 			}
 		});
