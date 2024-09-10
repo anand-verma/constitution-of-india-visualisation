@@ -134,7 +134,7 @@ body {
 	padding: 0px 3px;
 	font-size: 11px;
 	border-radius: 4px;
-	color: transparent;
+	color: rgba(128, 128, 128, 0.5);
 }
 
 .shade1 {
