@@ -796,7 +796,8 @@ hindu.Constitution = function (option) {
                 if (articleData) {
                     // Populate the #contentDiv with the article data
                     $('#coi_panel').empty(); // Clear existing content
-                    $('#coi_panel').append('<h4>' + articleData.title + '</h4>');
+                    $('#coi_panel').append('<h3><b>' + articleData.title + '</b></h3>');
+					$('#coi_panel').append('<br>');
                     articleData.description.forEach(function (line) {
                         $('#coi_panel').append('<p>' + line + '</p>');
                     });
