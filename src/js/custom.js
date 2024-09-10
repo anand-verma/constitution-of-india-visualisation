@@ -230,6 +230,7 @@ hindu.Constitution = function (option) {
 		});
 		$('.amendments').on('click',function() {
 			$('#reset').addClass('show_element');
+			$('#detail').removeClass('show_element');
 			$('.article_coloring_legends').addClass('show_element');
 			if (is_heatmap) {
 				remove_heatmap();
@@ -389,6 +390,7 @@ hindu.Constitution = function (option) {
 		$('.article-list #parts_div .box').on('click',function () {
 			$(".box").css({"background-color":"","color":""})
 			$('#reset').addClass('show_element');
+			$('#detail').addClass('show_element');
 			if (is_heatmap) {
 				remove_heatmap();
 				$(".articles_container .box").css("background-color", "");
@@ -475,6 +477,7 @@ hindu.Constitution = function (option) {
 		$('.article-list #schedules .box').on('click',function () {
 			$(".box").css({"background-color":"","color":""})
 			$('#reset').addClass('show_element');
+			$('#detail').addClass('show_element');
 			if (is_heatmap) {
 				remove_heatmap();
 				$(".articles_container .box").css("background-color", "");
@@ -645,6 +648,7 @@ hindu.Constitution = function (option) {
 		$('.years_box').on('click',function() {
 			$(".part .box").css({"background-color":"","color":""})
 			$('#reset').addClass('show_element');
+			$('#detail').removeClass('show_element');
 			if($("#main_title").hasClass("col-sm-3")) {
 				$("#main_title").removeClass("col-sm-3");
 				$("#main_title").addClass("col-sm-4");

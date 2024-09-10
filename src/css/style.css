@@ -46,6 +46,20 @@ body {
 	border: 1px solid lightgrey
 }
 
+.detail_class {
+	color: white;
+	padding: 5px 11px;
+	border-radius: 4px;
+	background-color: rgb(125, 65, 184);
+	margin: 0px 0px 3px 56px;
+}
+
+.detail_class:hover {
+	background-color: #eee;
+	color: rgb(125, 65, 184);
+	border: 1px solid lightgrey
+}
+
 .article_coloring_legends {
 	float: right;
 	padding-left: 260px;
@@ -81,7 +95,15 @@ body {
 	cursor: pointer;
 	font-size: 12px;
 	margin-top: -8px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+	visibility: hidden;
+}
+
+#detail {
+	cursor: pointer;
+	font-size: 12px;
+	margin-top: -8px;
+	margin-bottom: 15px;
 	visibility: hidden;
 }
 
@@ -272,7 +294,7 @@ body {
 
 #top_panel {
 	height: 60px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	border-bottom: 1px solid #eee
 }
 
