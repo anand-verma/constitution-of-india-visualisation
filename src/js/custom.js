@@ -477,7 +477,7 @@ hindu.Constitution = function (option) {
 		$('.article-list #schedules .box').on('click',function () {
 			$(".box").css({"background-color":"","color":""})
 			$('#reset').addClass('show_element');
-			$('#detail').addClass('show_element');
+			$('#detail').removeClass('show_element');
 			if (is_heatmap) {
 				remove_heatmap();
 				$(".articles_container .box").css("background-color", "");
@@ -782,5 +782,39 @@ hindu.Constitution = function (option) {
 			$('#reset').removeClass('show_element');
 			window.location.href = window.location.origin+window.location.pathname;
 		})
+
+		// On click of the detail element
+        $('#detail').on('click', function () {
+            // Get the article number from the URL
+            let articleNumber = getQueryParameter('article');
+			console.info(articleNumber);
+            
+            $.getJSON("data/constitution_of_india.json", function (data) {
+                // Find the article based on the article number
+                let articleData = data.find(item => String(item.article) === articleNumber);
+				console.info(articleData);
+                if (articleData) {
+                    // Populate the #contentDiv with the article data
+                    $('#coi_panel').empty(); // Clear existing content
+                    $('#coi_panel').append('<h4>' + articleData.title + '</h4>');
+                    articleData.description.forEach(function (line) {
+                        $('#coi_panel').append('<p>' + line + '</p>');
+                    });
+
+                    // Clear the other div
+					$('#left_side_bar').empty();
+                    $('#right_side_bar').empty();
+					
+                } else {
+                    // If article not found, display an error message in #contentDiv
+                    $('#contentDiv').html('<p>The requested article could not be found.</p>');
+                }
+            });
+        });
+
+		function getQueryParameter(name) {
+			let urlParams = new URLSearchParams(window.location.search);
+			return urlParams.get(name);
+		}
 	}
 }
