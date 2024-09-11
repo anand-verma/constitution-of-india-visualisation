@@ -363,13 +363,28 @@ body {
 .party_upa .box{background:#AED581;}*/
 
 /*-------------------articals margins-----------*/
+
+#union_and_its_territory {
+	margin-top: 3px;
+	margin-left: -21px;
+	line-height: 1.2em;
+}
+
+#citizenship {
+	margin-top: 2px;
+}
+
+#fundamental_rights {
+	margin-top: 4px;
+}
+
 #directive_principles_of_state_policy {
 	margin-top: 21px;
 	line-height: 12px;
 }
 
 #fundamental_duties {
-	margin-top: 18px;
+	margin-top: 10px;
 }
 
 #union {
@@ -378,96 +393,94 @@ body {
 }
 
 #states {
-	margin-top: 162px;
+	margin-top: 180px;
 	/* margin-bottom:40px;*/
 }
 
 #union_territories {
-	margin-top: 55px;
+	margin-top: 100px;
 }
 
+#states_in_part_b_of_the_first_schedule {
+	margin-top: 170px;
+	line-height: 1.2em;
+}
+
+
 #the_panchayats {
-	margin-top: 9px;
+	margin-top: 20px;
 }
 
 #municipalities {
-	margin-top: 31px;
+	margin-top: 50px;
 }
 
 #the_scheduled_and_tribal_areas {
-	margin-top: 21px;
+	margin-top: 50px;
 	line-height: 1.2em;
 }
 
 #finance_property_contracts_and_suits {
-	margin-top: 33px;
+	margin-top: 25px;
 	line-height: 1.2em;
 }
 
 #relations_between_the_union_and_the_states {
-	margin-top: 6px;
+	margin-top: 10px;
 	line-height: 1.2em;
 }
 
-#states_in_part_b_of_the_first_schedule {
-	margin-top: 156px;
-	line-height: 1.2em;
-}
 
 #trade_commerce_and_intercourse_within_the_territory_of_india {
-	margin-top: 28px;
+	margin-top: 50px;
 	line-height: 1.2em;
 }
 
-#union_and_its_territory {
-	margin-top: 3px;
-	margin-left: -21px;
-	line-height: 1.2em;
-}
-
-#fundamental_rights {
-	margin-top: 4px;
-}
 
 #services_under_the_union_and_the_states {
-	margin-top: 18px;
+	margin-top: 60px;
 	line-height: 1.2em;
 }
 
 #tribunals {
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 #elections {
-	margin-top: 3px;
+	margin-top: 10px;
 }
 
 #special_provisions_relating_to_certain_classes {
-	margin-top: 2px;
+	margin-top: 10px;
 	line-height: 1.2em;
 }
 
 #official_language {
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 #emergency_provisions {
-	margin-top: 3px;
+	margin-top: 10px;
 }
 
 /*#miscellaneous{margin-left:-18px;}*/
 #temporary_transitional_and_special_provisions {
-	margin-top: 6px;
+	margin-top: 10px;
+	line-height: 1.2em;
+}
+
+#miscellaneous {
+	margin-top: 10px;
 	line-height: 1.2em;
 }
 
 #amendment_of_the_constitution {
-	margin-top: 3px;
+	margin-top: 10px;
 	line-height: 1.2em;
 }
 
 #short_title_commencement_authoritative_text {
-	margin-top: 9px;
+	margin-top: 10px;
 	line-height: 1.2em;
 }
 
@@ -475,9 +488,6 @@ body {
 	margin-top: 40px;
 }
 
-#citizenship {
-	margin-top: 2px;
-}
 
 .deselect-text {
 	color: #C8C8C8;
