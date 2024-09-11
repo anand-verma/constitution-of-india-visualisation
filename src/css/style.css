@@ -293,7 +293,7 @@ body {
 }
 
 #top_panel {
-	height: 60px;
+	height: auto;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #eee
 }
